@@ -1,0 +1,156 @@
+1.describe your any model which you developed...all steps### Machine Learning (Data Science) work flow ---
+Data Exploration
+Data Cleaning
+Data analysis (incl. Machine Learning)
+Data Visualisation
+Results presentation
+---------------
+2. What is scaling
+--------------------------------------------------------------------
+3. What is feature engineering
+---------------------------------------------------------------------------
+4. How to do evaluation of model
+--------------------------------------
+5. What is prunning of decision tree
+-------------------------
+6. What is overfitting and underfitting and How to deal with
+----------------------------------------------------------
+7. Bias-variance trade-off
+--------------------------------------------------------------------------
+8.cross-validation methods (k-fold, hold-out method)
+
+-------------------------------------------
+9. Ways for variable reduction
+Dimension Reduction refers to the process of converting a set of data having vast dimensions into data with lesser dimensions ensuring that it conveys similar information concisely. 
+--------------------------------------------------------------
+10. Confustion matrix, formulae for AUC, precision, sensitivity, specificity
+--------------------------------------
+11. Ols method for regression
+
+-----------------------------------------
+11.5 Gradient Descent Algorithm
+-----------------------------------------------
+12. Logit function for logistics regression
+----------------------------------------------
+13. How to choose value for k in k-means algorithm (elbow method)
+----------------------------------------------------------
+14. How random forest work(how attribute selection is done at node for split)
+----------------------------------------------------
+15. How to choose value of k in knn algorithm
+-------------------------------------
+16. What are assumptions of linear regression
+
+--------------------------------------------------------------------
+17. Rmse, r-squared, adjusted r-squared for linear regression
+https://www.theanalysisfactor.com/assessing-the-fit-of-regression-models/
+-----------------------------------------------------------------
+
+18. Anova analysis
+Analysis of Variance (ANOVA) is a statistical method used to test differences between two or more means
+Analysis of variance (ANOVA) is a statistical technique that is used to check if the means of two or more groups are significantly different from each other. ANOVA checks the impact of one or more factors by comparing the means of different samples.
+
+
+------------------------------------------------------------------------
+19. ARIMA time series analysis
+https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
+-----------------------------------------------------------------
+20. What is variance, standard deviation, normal distribution, binomial distrbution, null hypohesis, p test, chi square, t test, information value
+-------------------------------
+22. What is boosting and bagging
+Boosting and bagging are similar, in that they are both ensembling techniques, where a number of weak learners (classifiers/regressors that are barely better than guessing) combine (through averaging or max vote) to create a strong learner that can make accurate predictions. Bagging means that you take bootstrap samples (with replacement) of your data set and each sample trains a (potentially) weak learner. Boosting, on the other hand, uses all data to train each learner, but instances that were misclassified by the previous learners are given more weight so that subsequent learners give more focus to them during training.
+
+23. No. Of hidden layers in neural network
+24. No. Of neurons in hidden layer
+
+https://www.springboard.com/blog/machine-learning-interview-questions/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Evaluation MAchine Learning Algorithm
+
+Supervised:
+
+1. Decision Trees:
+
+You can use decision trees when you have a linear decision boundary. An example would be classifying people on the basis of their IQ:
+
+Over 140 - Genius
+Over 120 - Above Average
+
+and so on. You have an advantage that you can attribute some meaning to the decisions.
+
+2. Support Vector Machines:
+
+Support Vector Machines are primarily for binary classification. (They can be indirectly used for multi-class classification, but I don't have much idea about it. I have done face recognition with SVM, but describing it will get too technical.) SVMs have the advantage (compared to decision trees) that you can use them for non-linear decision boundaries. But the disadvantage is that you can't attribute meaning (like why the features being x result in the sample being classified y). SVMs also take a really long time to train.
+
+3. ANN:
+
+ANNs can be used for multi-class classification and non-linear boundaries. But a problem with ANN is that you have to empirically try out different topologies to arrive at the best one. Also, you generally need a huge number of training samples (lot more than what you would require in SVM) to achieve good accuracy. So, training takes a long time. You also can get probabilistic estimates of a sample belonging to a class. (Scikit-learn's function for SVM generates probabilities, but I am not sure how they do that. They probably use the distance from the decision boundary or something, but ANN directly gives you probabilities.)
+
+4. Random Forests:
+
+Random forests can be used for both classification and  regression. You have a bunch of decision trees, each formed with a (not necessarily disjoint) subset of the features. Each tree gives a vote for the class. The sample is classified as the class with the most number of votes. Random forests can also give you an indication of feature importance. It is one of the most popular classifiers, so you should probably try it almost always.
+
+5. Linear Regression\ Ridge regression:
+
+Use when you want to predict continuous values, instead of classifying. Regression can be used for traffic prediction, for instance. Ridge regression reduces the variance in your predictions. Variance is one of the components of test error, the other is bias.
+
+6. Naive Bayes Classifier:
+
+You can use the Naive Bayes classifier when the features are conditionally independent. I have used it for really simplistic object recognition in RGB where the three channels were assumed to be uncorrelated.
+
+7. Bayesian Nets:
+
+Use Bayesian Nets when you need to model cause-effect relations e.g medical diagnosis.
+
+Unsupervised:
+
+1. Hidden Markov Models:
+
+If your data changes over time, like activity recognition for example; you could use HMM. Similar to ANN, HMM requires you to empirically arrive at a topology.
+I don't know of an alternative to HMM, so maybe you should look it up.
+
+2. Clustering:
+
+Use k-means clustering when you need to group points based on some feature. Use spectral clustering when you need to group points based on connectivity.
+
+
+
+=======================
+https://github.com/ujjwalkarn/Machine-Learning-Tutorials
+https://pythonprogramming.net/machine-learning-tutorial-python-introduction/
+https://www.commonlounge.com/discussion/33a9cce246d343dd85acce5c3c505009?r=gl$-ml-v1
+Deep Learning:
+https://www.commonlounge.com/discussion/eacc875c797744739a1770ba0f605739
+
+24 projects
+https://www.analyticsvidhya.com/blog/2018/05/24-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/
+
+==Skill **
+UseFul Link
+https://www.quora.com/How-do-I-learn-machine-learning-1
+
+
+https://theopenacademy.com/content/machine-learning
+Udemy::
+Machine Learning A-Z™: Hands-On Python & R In Data Science - Udemy
+https://www.udemy.com/machine-learning-course-with-python/?siteID=QhjctqYUCD0-aleLlVdbDbUut7Z7yWQM4A&LSNPUBID=QhjctqYUCD0
+\\https://www.coursera.org/learn/machine-learning/lecture/db3jS/model-representation
+
+https://www.coursera.org/learn/machine-learning/home/week/2
+
+https://developers.google.com/machine-learning/crash-course/
